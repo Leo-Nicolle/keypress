@@ -393,7 +393,7 @@ function emitKey(stream, s) {
 
   // Don't emit a key if no name was found
   if (key.name === undefined) {
-    key = undefined;
+    key.name = "";
   }
 
   if (s.length === 1) {
